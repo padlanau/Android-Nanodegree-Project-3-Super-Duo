@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">サッカーのスコア</string>
+    <string name="about">について</string>
+    <string name="action_settings">[設定]</string>
+    <string name="bundesliga">ブンデスリーガ</string>
+    <string name="champions_league">UEFAチャンピオンズリーグ</string>
+    <string name="final_text">決勝</string>
+    <string name="first_knockout_round">まずノックアウトラウンド</string>
+    <string name="group_stage_text">グループステージ</string>
+    <string name="hello_world">こんにちは世界！</string>
+    <string name="matchday_text">試合の日</string>
+    <string name="premierleague">プレミアリーグ</string>
+    <string name="primeradivison">プリメーラ</string>
+    <string name="quarter_final">クォーターファイナル</string>
+    <string name="semi_final">準決勝</string>
+    <string name="seriaa">セリエA</string>
+    <string name="share_text">シェア</string>
+    <string name="test_text">テスト</string>
+    <string name="title_activity_about">アクティビティについて</string>
+    <string name="today">今日</string>
+    <string name="tomorrow">トゥモロー</string>
+    <string name="widget_text">これはおそらく、ウィジェットです</string>
+    <string name="yesterday">イエスタデイ</string>
+    <string name="total_gameresults">総ゲームの結果</string>
+    <string name="about_text">このアプリケーションは、サッカーのプレミアリーグ、セリアA、ブンデスリーガ、プリメーラ、UEFAチャンピオンズリーグのスコアに一致し得ます。すべての一致データがfootball-data.org無料のAPIから取得します。すべてのチームのロゴは、所有者の許可書を要求する際にhttp://hdlogo.wordpress.com/から取得します。このアプリの最初のバージョンはYahiaハーリド・イブン・エルワリド・アーメドによって作成された、と修正されたバージョンがUdacityアンドロイドNanodegreeプログラムの学生に与えられます。バグを報告するには、または提案はykibnelwalid@gmail.comにメールを送信することを躊躇しません。オフシーズンの間に、偽のデータがアプリに追加されます。</string>
+</resources>

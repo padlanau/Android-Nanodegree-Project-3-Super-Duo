@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fußballergebnisse</string>
+    <string name="about">über</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="bundesliga">Bundesliga</string>
+    <string name="champions_league">UEFA Champions League</string>
+    <string name="final_text">Schluss</string>
+    <string name="first_knockout_round">Achtelfinale</string>
+    <string name="group_stage_text">Gruppenphase</string>
+    <string name="hello_world">Hallo Welt!</string>
+    <string name="matchday_text">Spieltag</string>
+    <string name="premierleague">Premier League</string>
+    <string name="primeradivison">Primera Division</string>
+    <string name="quarter_final">Viertelfinale</string>
+    <string name="semi_final">Halbfinale</string>
+    <string name="seriaa">Serie A</string>
+    <string name="test_text">Test</string>
+    <string name="share_text">Aktie</string>
+    <string name="title_activity_about">Über Aktivität</string>
+    <string name="today">heute</string>
+    <string name="tomorrow">morgen</string>
+    <string name="widget_text">Dies ist ein Widget wahrscheinlich</string>
+    <string name="yesterday">gestern</string>
+    <string name="total_gameresults">Gesamtspielergebnisse</string>
+    <string name="about_text">Diese Anwendung bekommen Fußballspielen Score für die Premier League, Seria A, Bundesliga, Primera Division und der UEFA Champions League. Alle Matches Daten werden von football-data.org kostenlose API erworben. Alle Team-Logos aus http://hdlogo.wordpress.com/ auf eine Erlaubnis eingeholt Form der Besitzer erworben. Die ursprüngliche Version dieser App wurde von Yahia Khalid Ibn El Walid Ahmed erstellt wurde, und eine modifizierte Version richtet sich an Studierende im Udacity Android Nanodegree Programms. Um keine Fehler zu melden, oder Anregungen zögern Sie nicht, eine Mail an ykibnelwalid@gmail.com schicken. In der Nebensaison, werden gefälschte Daten an die App hinzugefügt werden.</string>
+</resources>

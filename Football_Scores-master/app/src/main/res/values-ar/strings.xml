@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">كرة القدم العشرات</string>
+    <string name="about">حول</string>
+    <string name="action_settings">إعدادات</string>
+    <string name="bundesliga">الدوري الألماني</string>
+    <string name="champions_league">دوري أبطال أوروبا</string>
+    <string name="final_text">نهائي</string>
+    <string name="first_knockout_round">الجولة الأولى بالضربة القاضية</string>
+    <string name="group_stage_text">مرحلة المجموعات</string>
+    <string name="hello_world">مرحبا بالعالم!</string>
+    <string name="matchday_text">يوم المباراة</string>
+    <string name="premierleague">الدوري الممتاز</string>
+    <string name="primeradivison">دوري الدرجة الأولى</string>
+    <string name="quarter_final">الربع النهائي</string>
+    <string name="semi_final">نصف نهائي</string>
+    <string name="seriaa">الدوري الايطالي</string>
+    <string name="share_text">حصة</string>
+    <string name="test_text">اختبار</string>
+    <string name="title_activity_about">حول آخر</string>
+    <string name="today">اليوم</string>
+    <string name="tomorrow">غدا</string>
+    <string name="widget_text">هذا هو القطعة على الأرجح</string>
+    <string name="yesterday">أمس</string>
+    <string name="total_gameresults">النتائج الإجمالية لعبة</string>
+    <string name="about_text">هذا التطبيق الحصول على مباريات كرة القدم نتيجة للدوري الممتاز، الدوري الإيطالي، الدوري الألماني، الدوري الاسباني ودوري ابطال اوروبا الاتحاد الاوروبي. يتم الحصول على جميع البيانات مباريات من API مجانا football-data.org. يتم الحصول على كل الشعارات فريق من http://hdlogo.wordpress.com/ عند طلب شكل إذن المالك. تم إنشاء النسخة الأصلية من هذا التطبيق بواسطة El يحيى خالد بن الوليد أحمد، وتعطى نسخة معدلة للطلاب في برنامج Udacity الروبوت Nanodegree. للإبلاغ عن أي البق، أو اقتراحات لا تتردد في إرسال بريد إلكتروني إلى ykibnelwalid@gmail.com. خلال موسمها، سيتم إضافة بيانات وهمية إلى التطبيق.</string>
+</resources>
