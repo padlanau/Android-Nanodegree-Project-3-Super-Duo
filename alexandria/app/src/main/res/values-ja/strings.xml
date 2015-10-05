@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Alexandria</string>
+    <string name="not_found">いいえ帳が見つかりませんでした</string>
+    <string name="ok_button">次</string>
+    <string name="pref_startScreen">[スタート]画面</string>
+    <string name="scan">スキャン/本を追加</string>
+    <string name="scan_button">スキャン</string>
+    <string name="search_books">あなたの好きな本を検索</string>
+    <string name="search">検索</string>
+    <string name="share_text">本を読まなければなりません</string>
+    <string name="title_activity_settings">[設定]</string>
+    <string name="about">このアプリケーションについて</string>
+    <string name="action_settings">[設定]</string>
+    <string name="action_share">シェア</string>
+    <string name="back_button">戻る</string>
+    <string name="book_cover">ブックカバー</string>
+    <string name="books">本のリスト</string>
+    <string name="cancel_button">キャンセル</string>
+    <string name="delete">ブックの削除</string>
+    <string name="input_hint">挿入ISBN-13。数字のみ</string>
+    <string name="navigation_drawer_open">オープンナビゲーション引き出し</string>
+    <string name="navigation_drawer_close">閉じるナビゲーション引き出し</string>
+    <string name="no_internet">いいえ、インターネット接続。あなたの接続を確認してください</string>
+    <string name="books_count">本の数は、スキャンされました</string>
+    <string name="scanned_books">書籍をスキャン</string>
+    <string name="about_text">このアプリケーションは、GoogleのAPIから書籍情報を取得します。すべてのタイトルは、画像をカバーし、著者情報がそこから来ています。このアプリの最初のバージョンは、サシャイェシュケによって造られた、と修正されたバージョンがUdacityアンドロイドNanodegreeプログラムの学生に与えられます。</string>
+</resources>

@@ -1,0 +1,13 @@
+<!--
+
+"100000"  milli seconds is  1.66 mins
+"900000" milli seconds is 15 minutes
+-->
+
+
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+  android:minWidth="144dip"
+  android:minHeight="72dip"
+  android:updatePeriodMillis="180000"
+  android:initialLayout="@layout/widget"
+/>

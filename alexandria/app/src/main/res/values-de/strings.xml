@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Alexandria</string>
+    <string name="not_found">Kein Buch gefunden</string>
+    <string name="ok_button">Nächster</string>
+    <string name="pref_startScreen">Wählen Sie Start-Bildschirm</string>
+    <string name="scan">Scan/fügen Sie ein Buch</string>
+    <string name="scan_button">Scan</string>
+    <string name="search_books">suchen Sie Ihr Lieblingsbuch</string>
+    <string name="search">Suche</string>
+    <string name="share_text">Ein Muss Buch lesen</string>
+    <string name="title_activity_settings">Einstellungen</string>
+    <string name="about">Über diese Anwendung</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="action_share">Aktie</string>
+    <string name="back_button">geh zurück</string>
+    <string name="book_cover">Buchcover</string>
+    <string name="books">Liste der Bücher</string>
+    <string name="cancel_button">Abbrechen</string>
+    <string name="delete">Buch löschen</string>
+    <string name="input_hint">Legen ISBN-13. nur Ziffern</string>
+    <string name="navigation_drawer_close">Schließen Navigation Schublade</string>
+    <string name="navigation_drawer_open">Öffnen Navigation Schublade</string>
+    <string name="no_internet">Keine Internetverbindung. Bitte überprüfen Sie Ihre Verbindung</string>
+    <string name="books_count">Anzahl der Bücher gescannt</string>
+    <string name="scanned_books">Bücher gescannt</string>
+    <string name="about_text">Diese Anwendung erhält Buchinformationen aus einem Google-API. Alle Titel, Bilder decken, und Autoreninformationen von dort kommen. Die ursprüngliche Version dieser App wurde von Sascha Jaschke gebaut und eine modifizierte Version richtet sich an Studierende im Udacity Android Nanodegree Programms.</string>
+</resources>
