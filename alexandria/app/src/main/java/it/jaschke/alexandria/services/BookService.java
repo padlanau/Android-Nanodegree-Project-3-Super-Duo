@@ -19,10 +19,11 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import it.jaschke.alexandria.AddBook.ResponseReceiver;
+import it.jaschke.alexandria.ConnectionDetector;
 import it.jaschke.alexandria.MainActivity;
 import it.jaschke.alexandria.R;
 import it.jaschke.alexandria.data.AlexandriaContract;
-import it.jaschke.alexandria.AddBook.ResponseReceiver;
 
 /**
  * An {@link IntentService} subclass for handling asynchronous task requests in
@@ -44,6 +45,9 @@ public class BookService extends IntentService {
     public static final int STATUS_ERROR        = 2;
     public static final int STATUS_BOOKNOTFOUND = 3;
 
+    // Connection detector class
+    ConnectionDetector cd;
+
     public BookService() {
         super("Alexandria");
     }
@@ -54,7 +58,24 @@ public class BookService extends IntentService {
             final String action = intent.getAction();
             if (FETCH_BOOK.equals(action)) {
                 final String ean = intent.getStringExtra(EAN);
-                fetchBook(ean);
+
+                // creating connection detector class instance
+                cd = new ConnectionDetector(getApplicationContext());
+
+                // check for Internet status before going to the API to fail
+                //  "No Internet Connection"
+                if (!cd.isConnectingToInternet()) {
+
+                    Intent messageIntent = new Intent(MainActivity.MESSAGE_EVENT);
+                    messageIntent.putExtra(MainActivity.MESSAGE_KEY,getResources().getString(R.string.no_internet));
+                    LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(messageIntent);
+                    notifyFinished(STATUS_ERROR);
+
+                } else {
+
+                    fetchBook(ean);
+                }
+
             } else if (DELETE_BOOK.equals(action)) {
                 final String ean = intent.getStringExtra(EAN);
                 deleteBook(ean);
@@ -97,8 +118,6 @@ public class BookService extends IntentService {
 
         bookEntry.close();
 
-
-
         HttpURLConnection urlConnection = null;
         BufferedReader reader = null;
         String bookJsonString = null;
@@ -119,8 +138,6 @@ public class BookService extends IntentService {
             urlConnection.connect();
 
             // it will pass here if successfully connected to internet.
-
-
 
             InputStream inputStream = urlConnection.getInputStream();
             StringBuffer buffer = new StringBuffer();
