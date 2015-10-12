@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.CursorLoader;
+import android.support.v4.content.LocalBroadcastManager;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -47,11 +48,6 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
 
     public AddBook(){
     }
-
-
-
-
-
 
 
     @Override
@@ -122,9 +118,6 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
 
 
 
-
-
-
         rootView.findViewById(R.id.scan_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -148,17 +141,11 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
                 try {
                     Intent intent = new Intent("com.google.zxing.client.android.SCAN");
                     intent.putExtra("SCAN_MODE", "PRODUCT_MODE");
-                    startActivityForResult(intent, 0);                        // after startActivityForResult(), it will call
+                    startActivityForResult(intent, 0);   // after startActivityForResult(), it will call onActivityResult
 
                 } catch (ActivityNotFoundException anfe) {
-                    Log.e("onClick", "Scanner Not Found", anfe);
+                    Log.e("onClick", "Scanner Not Found. Please install the scanner from Google Play store", anfe);
                 }
-
-                // CharSequence text = "This button should let you scan a book for its barcode!";
-                // int duration = Toast.LENGTH_SHORT;
-
-                // Toast toast = Toast.makeText(context, text, duration);
-                // toast.show();
 
 
             }
@@ -221,55 +208,6 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
             }
         }
     }
-
-
-
-
-
-
-
-
-    // https://github.com/ataulm/android-basic/blob/zxing/app/src/main/java/com/ataulm/basic/StartScanningFromFragmentActivity.java
-    // @Override
-  // public static void onActivityResult(int requestCode, int resultCode, Intent data, Context context) {
-         //super.onActivityResult(requestCode, resultCode, data);
-     //   IntentResult scanningResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
-   //     String scanData = (scanningResult != null) ? scanningResult.getContents() : "";
-
-   //     if (scanData == null || scanData.isEmpty()) {
-            //scanDataTextView.setText("Scan complete, no data");
-   //     } else {
-           // scanDataTextView.setText(scanData);
-   //     }
-   // }
-
-
-
-
-
-    // http://stackoverflow.com/questions/12074316/how-to-create-for-intentintegrator-in-android-with-zxing
-    //public void onActivityResult(int requestCode, int resultCode, Intent data) {
-    //    switch(requestCode) {
-    //        case IntentIntegrator.REQUEST_CODE:
-    //        {
-    //            if (resultCode == 1){
-   //             }
-    //            else
-     //           {
-    //                IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
-//
-  //                  String UPCScanned = scanResult.getContents();
-   //             }
-   //             break;
-    //        }
-   //    }
-   // }
-
-
-
-
-
-
 
 
     private void restartLoader(){
@@ -380,8 +318,6 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
                     break;
             }
 
-
-
         }
     }
 
@@ -390,8 +326,8 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
 
     @Override
     public void onDestroy() {
-        getActivity().unregisterReceiver(receiver);
-        super.onDestroy();
+        LocalBroadcastManager.getInstance(getActivity()).unregisterReceiver(receiver);
+         super.onDestroy();
     }
 
 
